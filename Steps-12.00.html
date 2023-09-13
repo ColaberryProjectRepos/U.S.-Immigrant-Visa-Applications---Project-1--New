@@ -1,0 +1,404 @@
+
+Create DAX Measures
+12
+<p class="MsoNormal"><b><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#283C46">Steps:&nbsp;</span></b></p><p class="MsoNormal" style="margin-bottom: 0in; line-height: 115%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="color: rgb(40, 60, 70); font-family: Arial, sans-serif; font-size: 12pt;">1.&nbsp; &nbsp;
+&nbsp;Go to “Report view” in Power BI.</span><br></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; line-height: 115%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#283C46">2.&nbsp; &nbsp;
+&nbsp;Right-click on the "US_Perm_Visas" table in the Fields pane.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; line-height: 115%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#283C46">3.&nbsp; &nbsp;
+&nbsp;Select "New Measure" to create a new measure.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; line-height: 115%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#283C46">4.&nbsp; &nbsp;
+&nbsp;Use the provided DAX formulas to create the desired KPIs, sub-KPIs and
+Arrow and save them.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; line-height: 115%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#283C46">5.&nbsp; &nbsp;
+&nbsp;Repeat the above steps for each of the desired KPIs, sub-KPIs and Arrow.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;DAX Formulas:&nbsp;<br>
+<!--[if !supportLineBreakNewLine]--><br>
+<!--[endif]--></span></b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#283C46"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">1.&nbsp; &nbsp; &nbsp;<b>Applications</b>&nbsp;=&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">COUNT('US_Perm_Visas'[Application_Type])<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">2.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp; &nbsp; &nbsp;<b>Total Applications =</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">COUNTROWS(US_Perm_Visas)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">3.&nbsp; &nbsp; &nbsp;<b>Applications per Mth
+=</b>&nbsp;OUNT('US_Perm_Visas'[Application_Type])<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">4.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp; &nbsp; &nbsp;<b>Total App This Yr =</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;CALCULATE(COUNTROWS(US_Perm_Visas),&nbsp;
+&nbsp; &nbsp;YEAR(US_Perm_Visas[Decision_Date]) = YEAR(TODAY()))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">5.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp; &nbsp; &nbsp;<b>AR LY =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">CALCULATE('US_Perm_Visas'[.Approval
+Rating],'US_Perm_Visas'[YEAR] = MAX('US_Perm_Visas'[YEAR]) - 1)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">6.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp; &nbsp; &nbsp;<b>Total App This Yr =</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;CALCULATE(COUNTROWS(US_Perm_Visas),
+YEAR(US_Perm_Visas[Decision_Date]) = YEAR(TODAY()))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">7.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp; &nbsp; &nbsp;<b>Total App Last Yr =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">CALCULATE(COUNTROWS(US_Perm_Visas),
+YEAR(US_Perm_Visas[Decision_Date]) = YEAR(TODAY()) - 1)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">8.&nbsp; &nbsp; &nbsp;<b>AR This Yr =</b>&nbsp;CALCULATE(
+CALCULATE('US_Perm_Visas'[.Approval Rating],'US_Perm_Visas'[YEAR] =
+MAX('US_Perm_Visas'[YEAR])))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">9.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp; &nbsp; &nbsp;<b>AR YoY % =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">VAR ARThisYr = [.AR This Yr]<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">VAR ARLY = [.AR LY] RETURN<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">IF( ISBLANK(ARLY), 0,<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">DIVIDE(ARThisYr - ARLY, ARLY, 0))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">10.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp;<b>&nbsp;Visa Applications per Yr =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;VAR VisaCount =
+COUNTROWS('US_Perm_Visas')<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;RETURN IF( ISBLANK(VisaCount),<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;BLANK(),&nbsp;
+IF(HASONEVALUE('Calendar'[Year]),<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;VisaCount, BLANK() ) )<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">11.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp;<b>App Per Yr =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">VAR YearCounts =&nbsp;
+SUMMARIZE('US_Perm_Visas', US_Perm_Visas'[Year], "YearCount",
+COUNT('US_Perm_Visas'[Application_Type]))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">VAR TotalYears = COUNTROWS(YearCounts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">VAR TotalApplications = SUMX(YearCounts,
+[YearCount])<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">RETURN DIVIDE(TotalApplications, TotalYears,
+0)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">12.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp;<b>Applications per Mth YoY % =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">VAR CurrentYearCount = [.Applications per Mth]<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">VAR PreviousYearCount = CALCULATE(<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">[.Applications per Mth],
+SAMEPERIODLASTYEAR('Calendar'[Date])<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">)RETURN IF(OR(ISBLANK(CurrentYearCount),
+ISBLANK(PreviousYearCount)),<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">0, DIVIDE(CurrentYearCount -
+PreviousYearCount, PreviousYearCount, 0))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">13.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp;<b>Approval Rating =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">IF(ISBLANK([.Total Applications]) ||
+ISBLANK(CALCULATE([.Total Applications], US_Perm_Visas[Case_Status] =
+"Certified-Expired")),0,DIVIDE(CALCULATE([.Total Applications],
+US_Perm_Visas[Case_Status] = "Certified-Expired"),<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">[.Total Applications]))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">14.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp;<b>&nbsp;Approved Applications =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">IF(ISBLANK(CALCULATE(COUNT('US_Perm_Visas'[Application_Type]),&nbsp;
+'US_Perm_Visas'[Case_Status] = "Certified")), 0, -- Return 0 instead
+of BLANK for missing values CALCULATE(
+COUNT('US_Perm_Visas'[Application_Type]), 'US_Perm_Visas'[Case_Status] =
+"Certified"))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">15.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp;<b>Apps YoY % =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">VAR SelectedYears =
+VALUES('Calendar'[Date].[Year])<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">RETURN&nbsp; AVERAGEX ( SelectedYears, VAR
+TotalAppThisYr = COUNTROWS('US_Perm_Visas') VAR TotalAppLY = CALCULATE(<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">COUNTROWS('US_Perm_Visas'),
+SAMEPERIODLASTYEAR('Calendar'[Date]))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">RETURN IF(ISBLANK(TotalAppThisYr) ||
+ISBLANK(TotalAppLY),<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">0, -- Return 0 instead of BLANK for missing
+values IF(<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">TotalAppLY = 0, 0, -- Return 0 instead of
+BLANK for division by &nbsp; zero DIVIDE(TotalAppThisYr - TotalAppLY,
+TotalAppLY))))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">16.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp;<b>Wage =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">VAR TotalSalary = SUMX(US_Perm_Visas,<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">IF(NOT(ISBLANK(US_Perm_Visas[Wage_Offer]))
+&amp;&amp; US_Perm_Visas[Wage_Offer_Unit] = "yr",<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">US_Perm_Visas[Wage_Offer] / 2080,&nbsp; --
+Yearly salary converted to hourly rate&nbsp; US_Perm_Visas[Wage_Offer] --
+Hourly rate ) )<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">VAR TotalHourlyWages = CALCULATE(SUMX(
+US_Perm_Visas, IF(NOT(ISBLANK(US_Perm_Visas[Wage_Offer])) &amp;&amp; US_Perm_Visas[Wage_Offer_Unit]
+= "hr",&nbsp; US_Perm_Visas[Wage_Offer], 0 ))) VAR CountHourlyWages =
+CALCULATE(COUNT(US_Perm_Visas[Wage_Offer]),<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">NOT(ISBLANK(US_Perm_Visas[Wage_Offer]))
+&amp;&amp; US_Perm_Visas[Wage_Offer_Unit] = "hr" ) VAR TotalWages = TotalSalary
++ TotalHourlyWages VAR CountWages =<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">COUNT(US_Perm_Visas[Wage_Offer]) VAR
+WageMultiplier =&nbsp; 1.2&nbsp; -- Adjust this multiplier as needed to
+increase wages&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">RETURN&nbsp; DIVIDE(TotalWages, CountWages) *
+WageMultiplier<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">17.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp;<b>Wage LY =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">CALCULATE( SUM('US_Perm_Visas'[Wage_Offer]),<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">YEAR('US_Perm_Visas'[Decision_Date]) =
+YEAR(TODAY()) - 1)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">18.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp;<b>Wage This Yr =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">CALCULATE( SUM('US_Perm_Visas'[Wage_Offer]),<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">YEAR('US_Perm_Visas'[Decision_Date]) =
+YEAR(TODAY()))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">19.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp;<b>Wage YoY % =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">VAR SelectedYears =
+VALUES('Calendar'[Date].[Year]) RETURN&nbsp; AVERAGEX ( SelectedYears, VAR
+WageThisYr = ALCULATE(SUM('US_Perm_Visas'[Wage_Offer]), 'Calendar'[Date].[Year]
+= EARLIER('Calendar'[Date].[Year])) VAR WageLY =
+ALCULATE(SUM('US_Perm_Visas'[Wage_Offer]), 'Calendar'[Date].[Year] =
+EARLIER('Calendar'[Date].[Year]) - 1) VAR WageYoY = IF(ISBLANK(WageLY), 0,
+DIVIDE(WageThisYr - &nbsp; WageLY, WageLY, 0)) RETURN IF(ISBLANK(WageYoY), 0,
+WageYoY) )<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">20.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp;<b>Applications per Mth YoY %&nbsp; Arrow =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">SWITCH(TRUE(), [.Apps YoY %] &lt;0,
+UNICHAR(9660), UNICHAR(9650))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">21.&nbsp;<b>AR YOY Arrow =</b>&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">SWITCH(TRUE(), [.AR YoY %] &lt;0,
+UNICHAR(9660), UNICHAR(9650))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">22.</span></b><span style="font-size:12.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#283C46">&nbsp;<b>Wage YoY Arrow =&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">SWITCH(TRUE(), [.Wage YoY %] &lt;0,
+UNICHAR(9660), UNICHAR(9650))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">GIF:</span></b></p><p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1371/12/1.gif" style="width: 800.8px; height: 477.651px;"><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46">&nbsp;</span></b></p><p class="MsoNormal" style="margin-bottom: 0in; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#283C46"><o:p></o:p></span></b></p>
+
+<p><a href="https://www.youtube.com/watch?v=tDqN2TKfqiw" target="_blank">DAX Formulas &amp; Creating Measures</a><br></p>
+
